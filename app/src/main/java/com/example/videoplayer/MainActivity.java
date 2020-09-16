@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity{
         VideoView videoView = (VideoView)findViewById(R.id.vdVw);
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
-        Uri uri = Uri.parse("andriod.resource://" + getPackageName() + "/" + R.raw.video1);
+        Uri uri = Uri.parse("andriod.resource://" + getPackageName() + "/" + R.raw.video2);
         videoView.setMediaController(mediaController);
         videoView.setVideoURI(uri);
         videoView.requestFocus();
